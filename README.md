@@ -1,16 +1,159 @@
-# React + Vite
+# 🍎 Manish Tiwari - Portfolio
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A stunning macOS-inspired portfolio website built with React and Vite, featuring an interactive desktop environment with draggable windows, animated dock, and modern UI/UX design.
 
-Currently, two official plugins are available:
+![Portfolio Screenshot](public/images/wallpaper.png)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## ✨ Features
 
-## React Compiler
+- 🖥️ **macOS-inspired Interface** - Authentic desktop experience with familiar window controls
+- 🎯 **Interactive Dock** - Animated dock with hover effects using GSAP
+- 📱 **Draggable Windows** - Fully interactive window system with drag functionality
+- 🎨 **Modern Design** - Clean, professional UI with Tailwind CSS
+- 📑 **Multiple Apps** - Portfolio, Articles, Gallery, Contact, Skills, and Resume sections
+- 🔍 **Dynamic Navigation** - Context-aware navigation with smooth transitions
+- 📱 **Responsive Design** - Optimized for different screen sizes
+- ⚡ **Performance Optimized** - Built with Vite for fast development and builds
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## 🚀 Tech Stack
 
-## Expanding the ESLint configuration
+- **Frontend Framework**: React 19.2.0
+- **Build Tool**: Vite 7.2.4
+- **Styling**: Tailwind CSS 4.1.18
+- **Animations**: GSAP 3.14.2 with Draggable plugin
+- **State Management**: Zustand 5.0.9
+- **Icons**: Lucide React
+- **Additional Libraries**:
+  - React PDF for resume viewing
+  - Immer for immutable updates
+  - DayJS for date handling
+  - React Tooltip for interactive hints
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## 🏗️ Project Structure
+
+```
+src/
+├── components/         # Reusable UI components
+│   ├── Dock.jsx       # Interactive macOS-style dock
+│   ├── Navbar.jsx     # Top navigation bar
+│   ├── Welcome.jsx    # Landing section with animations
+│   └── WindowControls.jsx
+├── windows/           # Application windows
+│   ├── Safari.jsx     # Articles/Blog section
+│   ├── Terminal.jsx   # Skills/Tech stack
+│   ├── Resume.jsx     # PDF resume viewer
+│   └── Contact.jsx    # Contact information
+├── hoc/              # Higher-order components
+│   └── WindowWrapper.jsx
+├── store/            # State management
+│   └── window.js     # Window state with Zustand
+├── constants/        # Data and configuration
+└── App.jsx          # Main application component
+```
+
+## 🛠️ Installation & Setup
+
+### Prerequisites
+
+- Node.js (v16 or higher)
+- npm or yarn
+
+### Clone Repository
+
+```bash
+git clone https://github.com/manishtiwari-dev/manish-tiwari-portfolio.git
+cd manish-tiwari-portfolio
+```
+
+### Install Dependencies
+
+```bash
+npm install
+```
+
+### Development Server
+
+```bash
+npm run dev
+```
+
+Open [http://localhost:5173](http://localhost:5173) in your browser.
+
+### Build for Production
+
+```bash
+npm run build
+```
+
+### Preview Production Build
+
+```bash
+npm run preview
+```
+
+## 🎨 Key Components
+
+### Interactive Dock
+
+- Hover animations with GSAP
+- App launching functionality
+- Visual feedback for active applications
+
+### Window System
+
+- Draggable windows with GSAP Draggable
+- Window state management with Zustand
+- Authentic macOS window controls
+
+### Portfolio Sections
+
+- **Articles**: Tech blog and insights
+- **Portfolio**: Project showcase with details
+- **Gallery**: Image collections
+- **Skills**: Technical expertise via terminal interface
+- **Contact**: Professional contact information
+- **Resume**: Interactive PDF viewer
+
+## 🎯 Browser Support
+
+- ✅ Chrome (Latest)
+- ✅ Firefox (Latest)
+- ✅ Safari (Latest)
+- ✅ Edge (Latest)
+
+## 📱 Responsive Design
+
+- Desktop: Full macOS experience
+- Tablet: Adapted interface
+- Mobile: Simplified navigation with responsive adjustments
+
+## 🤝 Contributing
+
+1. Fork the repository
+2. Create your feature branch (`git checkout -b feature/AmazingFeature`)
+3. Commit your changes (`git commit -m 'Add some AmazingFeature'`)
+4. Push to the branch (`git push origin feature/AmazingFeature`)
+5. Open a Pull Request
+
+## 📄 License
+
+This project is open source and available under the [MIT License](LICENSE).
+
+## 👤 About
+
+**Manish Tiwari** - Frontend Developer passionate about creating engaging user experiences
+
+- 💼 [Portfolio](https://manish-tiwari-portfolio.vercel.app)
+- 💌 Contact via the portfolio's contact section
+- 🐙 [GitHub](https://github.com/manishtiwari-dev)
+
+## 🙏 Acknowledgments
+
+- macOS design inspiration from Apple
+- GSAP for powerful animations
+- React ecosystem for robust development
+- Tailwind CSS for rapid styling
+
+---
+
+_Built with ❤️ using React + Vite_
