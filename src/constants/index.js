@@ -504,3 +504,5 @@ const WINDOW_CONFIG = {
 };
 
 export { INITIAL_Z_INDEX, WINDOW_CONFIG };
+
+export const EMAIL_ADDRESS = "manisht.mt.mt@gmail.com";

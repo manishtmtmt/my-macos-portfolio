@@ -1,5 +1,5 @@
 import { WindowControls } from "@components";
-import { socials } from "@constants";
+import { EMAIL_ADDRESS, socials } from "@constants";
 import WindowWrapper from "@hoc/WindowWrapper";
 
 const Contact = () => {
@@ -18,6 +18,7 @@ const Contact = () => {
         />
         <h3>Let's Connect</h3>
         <p>Got an idea? A bug to squash? Or just wanna talk tech? I'm in.</p>
+        <a href={`mailto:${EMAIL_ADDRESS}`}>{EMAIL_ADDRESS}</a>
 
         <ul>
           {socials.map(({ id, bg, link, icon, text }) => (
