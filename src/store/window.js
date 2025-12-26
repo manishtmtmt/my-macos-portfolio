@@ -11,7 +11,7 @@ const useWindowStore = create(
         const win = state.windows[windowKey];
         if (!win) return;
         win.isOpen = true;
-        win.zIndex = state.nextXIndex;
+        win.zIndex = state.nextXIndex + 1;
         win.data = data ?? win.data;
         state.nextXIndex++;
       }),
